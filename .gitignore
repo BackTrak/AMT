@@ -3,3 +3,14 @@
 ################################################################################
 
 /Backup
+/.vs
+/bin
+/Debug
+/MS3DExporter/Debug
+/MS3DExporter/Release
+/MS3DImporter/Debug
+/MS3DImporter/Release
+/MS3DTool/Debug
+/MS3DTool/Release
+/Release
+/UpgradeLog.htm

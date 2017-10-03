@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Sources">
+      <UniqueIdentifier>{8be39e0f-8e7c-4bfc-a635-40869492e357}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{742ca1f7-a90e-433c-963f-276edf67e145}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{236f1e85-fd91-4150-9fab-7440035d751e}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="External">
+      <UniqueIdentifier>{2eab4506-342f-403c-8f44-ff77843f9a0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Allegiance">
+      <UniqueIdentifier>{667415d7-c085-4920-b411-24029b562328}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="archives">
+      <UniqueIdentifier>{fdcb7c01-1fed-430f-b566-6b1efd09a947}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="About.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgAMT.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="msPlugInImpl.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BitmapGlue.cpp">
+      <Filter>Allegiance</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CVHFile.cpp">
+      <Filter>Allegiance</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MDLFile.cpp">
+      <Filter>Allegiance</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="msPlugIn.def">
+      <Filter>Sources</Filter>
+    </None>
+    <None Include="res\msPlugIn.rc2">
+      <Filter>Resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="msPlugIn.rc">
+      <Filter>Sources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="About.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgAMT.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="msPlugInImpl.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\msLib\msLib.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\msLib\msPlugIn.h">
+      <Filter>External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BitmapGlue.h">
+      <Filter>Allegiance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CVHFile.h">
+      <Filter>Allegiance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MDLFile.h">
+      <Filter>Allegiance</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="oldalgo.txt">
+      <Filter>archives</Filter>
+    </Text>
+    <Text Include="todo.Txt" />
+  </ItemGroup>
+</Project>

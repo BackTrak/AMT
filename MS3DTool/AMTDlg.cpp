@@ -121,7 +121,7 @@ void CAMTDlg::RefreshLists()
 	clFRAMES->ResetContent();
 	clLIGHTS->ResetContent();
 
-    for (i = 0; i < msModel_GetBoneCount (pModel); i++)
+    for (int i = 0; i < msModel_GetBoneCount (pModel); i++)
     {
 		char szName[MS_MAX_NAME];
 		char szPName[MS_MAX_NAME];

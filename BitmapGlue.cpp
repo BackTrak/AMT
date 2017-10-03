@@ -76,12 +76,13 @@ void CreateBMP24File(CString pszFile, PBITMAPINFO pbi,LPBYTE lpBits)
 WORD *ReadBMP(CString pszFile, long *rw, long *rh)
 {
 	FIBITMAP *dib = NULL;
-
-	dib = FreeImage_LoadBMP(pszFile);
+	
+	dib = FreeImage_Load(FIF_BMP, pszFile, BMP_DEFAULT);
 	if (dib != NULL) 
 	{
 		FIBITMAP *dib16 = FreeImage_ConvertTo16Bits565(dib); 
-		FreeImage_Free(dib);
+		FreeImage_Unload(dib);
+		//FreeImage_Free(dib);
 
 		*rw = FreeImage_GetWidth(dib16);
 		*rh = FreeImage_GetHeight(dib16);
@@ -97,7 +98,8 @@ WORD *ReadBMP(CString pszFile, long *rw, long *rh)
 				int p16d = ((h-1-y)*w+x);
 				lp16Bits[p16d] = lpBits[p16s];
 			}
-		FreeImage_Free(dib16);
+		//FreeImage_Free(dib16);
+		FreeImage_Unload(dib16);
 		return lp16Bits;
 	}
 	else

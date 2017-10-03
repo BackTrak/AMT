@@ -128,7 +128,7 @@ MakeShortFileName (const char *szName, char *szOut)
 {
 	strcpy (szOut, szName);
 
-	char *ptr = strrchr (szName, '\\');
+	const char *ptr = strrchr (szName, '\\');
 	if (!ptr)
 		ptr = strrchr (szName, '/');
 	if (ptr)
@@ -299,7 +299,7 @@ bool cPlugIn::ConvertMDLFile(msModel *pModel,CMDLFile *mdlfile)
 			// faces
 			o->mesh->nfaces = msMesh_GetTriangleCount(pMesh)*3;
 			o->mesh->faces = new WORD[o->mesh->nfaces];
-			for (j = 0; j < msMesh_GetTriangleCount (pMesh); j++)
+			for (int j = 0; j < msMesh_GetTriangleCount (pMesh); j++)
 			{
 				msTriangle *pTriangle = msMesh_GetTriangleAt (pMesh, j);
 		        
@@ -349,7 +349,8 @@ bool cPlugIn::ConvertMDLFile(msModel *pModel,CMDLFile *mdlfile)
 					obs[n]->textidx = -1;
 				else
 				{
-					for (int t=0;t<mdlfile->NumTextures;t++) // check if texture exists
+					int t; 
+					for (t=0;t<mdlfile->NumTextures;t++) // check if texture exists
 					{
 						if (szText == mdlfile->Textures[t])
 						{
@@ -444,7 +445,8 @@ bool cPlugIn::ConvertMDLFile(msModel *pModel,CMDLFile *mdlfile)
 				{
 					// find parent in mdlfile
 					CString name = sName.Mid(4,sName.GetLength()-7);
-					for (int n=0;n<mdlfile->NumFrameDatas;n++)
+					int n;
+					for (n=0;n<mdlfile->NumFrameDatas;n++)
 					{
 						if ((sName.Right(3) == "_to") &&
 							((mdlfile->FrameDatas[n].name == ("X"+name)) ||
@@ -594,6 +596,7 @@ bool cPlugIn::ConvertCVHFile(msModel *pModel,CCVHFile *cvhfile)
 			//
 			// triangles
 			//
+			int j;
 			for (j = 0; j < msMesh_GetTriangleCount (pMesh); j++)
 			{
 				msTriangle *pTriangle = msMesh_GetTriangleAt (pMesh, j);
@@ -646,6 +649,7 @@ bool cPlugIn::ConvertCVHFile(msModel *pModel,CCVHFile *cvhfile)
 		*/
 		cvhfile->ComputeHeader();
 		// named position - 'to'
+		int i;
 		for (i = 0; i < msModel_GetBoneCount (pModel); i++)
 		{
 		    char szName[MS_MAX_NAME];

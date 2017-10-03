@@ -1,45 +1,39 @@
-Microsoft Visual Studio Solution File, Format Version 8.00
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AMT", "CVHConvert.vcproj", "{2318EBB7-E3C7-4A78-B7F5-71AEF5B78897}"
-	ProjectSection(ProjectDependencies) = postProject
-	EndProjectSection
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AMT", "CVHConvert.vcxproj", "{2318EBB7-E3C7-4A78-B7F5-71AEF5B78897}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ms3dExporter", "MS3DExporter\MS3DExporter.vcproj", "{D6EF5E94-5BC7-4E0A-A5DB-A2A622FB1437}"
-	ProjectSection(ProjectDependencies) = postProject
-	EndProjectSection
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ms3dExporter", "MS3DExporter\MS3DExporter.vcxproj", "{D6EF5E94-5BC7-4E0A-A5DB-A2A622FB1437}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ms3dImporter", "MS3DImporter\ms3dImporter.vcproj", "{CE6AEFC1-F32F-47BD-AFA2-3474F989F8A3}"
-	ProjectSection(ProjectDependencies) = postProject
-	EndProjectSection
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ms3dImporter", "MS3DImporter\ms3dImporter.vcxproj", "{CE6AEFC1-F32F-47BD-AFA2-3474F989F8A3}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ms3dTool", "MS3DTool\msAllegTool.vcproj", "{6546AA39-1F3B-4387-A628-035D2196C078}"
-	ProjectSection(ProjectDependencies) = postProject
-	EndProjectSection
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ms3dTool", "MS3DTool\msAllegTool.vcxproj", "{6546AA39-1F3B-4387-A628-035D2196C078}"
 EndProject
 Global
-	GlobalSection(SolutionConfiguration) = preSolution
-		Debug = Debug
-		Release = Release
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
 	EndGlobalSection
-	GlobalSection(ProjectConfiguration) = postSolution
-		{2318EBB7-E3C7-4A78-B7F5-71AEF5B78897}.Debug.ActiveCfg = Debug|Win32
-		{2318EBB7-E3C7-4A78-B7F5-71AEF5B78897}.Debug.Build.0 = Debug|Win32
-		{2318EBB7-E3C7-4A78-B7F5-71AEF5B78897}.Release.ActiveCfg = Release|Win32
-		{2318EBB7-E3C7-4A78-B7F5-71AEF5B78897}.Release.Build.0 = Release|Win32
-		{D6EF5E94-5BC7-4E0A-A5DB-A2A622FB1437}.Debug.ActiveCfg = Debug|Win32
-		{D6EF5E94-5BC7-4E0A-A5DB-A2A622FB1437}.Debug.Build.0 = Debug|Win32
-		{D6EF5E94-5BC7-4E0A-A5DB-A2A622FB1437}.Release.ActiveCfg = Release|Win32
-		{D6EF5E94-5BC7-4E0A-A5DB-A2A622FB1437}.Release.Build.0 = Release|Win32
-		{CE6AEFC1-F32F-47BD-AFA2-3474F989F8A3}.Debug.ActiveCfg = Debug|Win32
-		{CE6AEFC1-F32F-47BD-AFA2-3474F989F8A3}.Debug.Build.0 = Debug|Win32
-		{CE6AEFC1-F32F-47BD-AFA2-3474F989F8A3}.Release.ActiveCfg = Release|Win32
-		{CE6AEFC1-F32F-47BD-AFA2-3474F989F8A3}.Release.Build.0 = Release|Win32
-		{6546AA39-1F3B-4387-A628-035D2196C078}.Debug.ActiveCfg = Debug|Win32
-		{6546AA39-1F3B-4387-A628-035D2196C078}.Debug.Build.0 = Debug|Win32
-		{6546AA39-1F3B-4387-A628-035D2196C078}.Release.ActiveCfg = Release|Win32
-		{6546AA39-1F3B-4387-A628-035D2196C078}.Release.Build.0 = Release|Win32
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2318EBB7-E3C7-4A78-B7F5-71AEF5B78897}.Debug|x86.ActiveCfg = Debug|Win32
+		{2318EBB7-E3C7-4A78-B7F5-71AEF5B78897}.Debug|x86.Build.0 = Debug|Win32
+		{2318EBB7-E3C7-4A78-B7F5-71AEF5B78897}.Release|x86.ActiveCfg = Release|Win32
+		{2318EBB7-E3C7-4A78-B7F5-71AEF5B78897}.Release|x86.Build.0 = Release|Win32
+		{D6EF5E94-5BC7-4E0A-A5DB-A2A622FB1437}.Debug|x86.ActiveCfg = Debug|Win32
+		{D6EF5E94-5BC7-4E0A-A5DB-A2A622FB1437}.Debug|x86.Build.0 = Debug|Win32
+		{D6EF5E94-5BC7-4E0A-A5DB-A2A622FB1437}.Release|x86.ActiveCfg = Release|Win32
+		{D6EF5E94-5BC7-4E0A-A5DB-A2A622FB1437}.Release|x86.Build.0 = Release|Win32
+		{CE6AEFC1-F32F-47BD-AFA2-3474F989F8A3}.Debug|x86.ActiveCfg = Debug|Win32
+		{CE6AEFC1-F32F-47BD-AFA2-3474F989F8A3}.Debug|x86.Build.0 = Debug|Win32
+		{CE6AEFC1-F32F-47BD-AFA2-3474F989F8A3}.Release|x86.ActiveCfg = Release|Win32
+		{CE6AEFC1-F32F-47BD-AFA2-3474F989F8A3}.Release|x86.Build.0 = Release|Win32
+		{6546AA39-1F3B-4387-A628-035D2196C078}.Debug|x86.ActiveCfg = Debug|Win32
+		{6546AA39-1F3B-4387-A628-035D2196C078}.Debug|x86.Build.0 = Debug|Win32
+		{6546AA39-1F3B-4387-A628-035D2196C078}.Release|x86.ActiveCfg = Release|Win32
+		{6546AA39-1F3B-4387-A628-035D2196C078}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-	EndGlobalSection
-	GlobalSection(ExtensibilityAddIns) = postSolution
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
